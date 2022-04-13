@@ -5,9 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace WebApplication1
+namespace EgyptAir2022
 {
-    public partial class Registerform : System.Web.UI.Page
+    public partial class Forget_Password : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
