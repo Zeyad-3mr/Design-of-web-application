@@ -33,6 +33,8 @@
                     </td>
                     <td>
                         <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox9" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -42,8 +44,11 @@
                     </td>
                     <td>
                         <asp:TextBox ID="TextBox11" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox11" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBox11" ErrorMessage="passowrd must be between 8-12 characters" Font-Size="Small" ForeColor="Red" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
                     </td>
-                    <td>&nbsp;</td>
+                    <td></td>
                 </tr>
                 <tr>
                     <td>
@@ -51,6 +56,9 @@
                     </td>
                     <td>
                         <asp:TextBox ID="TextBox12" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TextBox12" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBox11" ControlToValidate="TextBox12" ErrorMessage="not matching" Font-Size="Small" ForeColor="Red"></asp:CompareValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>

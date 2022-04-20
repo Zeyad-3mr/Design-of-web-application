@@ -56,3 +56,4 @@ C:\Users\Ziad\source\repos\EgyptAir2022\obj\Debug\VotingSystem.csproj.CoreCompil
 C:\Users\Ziad\source\repos\EgyptAir2022\obj\Debug\VotingSystem.csproj.CopyComplete
 C:\Users\Ziad\source\repos\EgyptAir2022\obj\Debug\EgyptAir2022.dll
 C:\Users\Ziad\source\repos\EgyptAir2022\obj\Debug\EgyptAir2022.pdb
+C:\Users\Ziad\source\repos\EgyptAir2022\obj\Debug\VotingSystem.csproj.AssemblyReference.cache

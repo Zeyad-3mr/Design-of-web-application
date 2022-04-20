@@ -42,7 +42,10 @@
                         <asp:Label ID="Label2" runat="server" Font-Names="Berlin Sans FB" Text="First-Name "></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="Txt_fn" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="Txt_fn" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="Txt_fn" ErrorMessage="Invalid First Name Format" Font-Size="Small" ForeColor="Red" ValidationExpression="([A-Z][a-z]* \ s[A-Z][a-z])|([A-Z][a-z]*)"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -51,7 +54,10 @@
                         <asp:Label ID="Label3" runat="server" Font-Names="Berlin Sans FB" Text="Last-Name "></asp:Label>
                     </td>
                     <td class="auto-style2">
-                        <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="Txt_ln" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Txt_ln" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="Txt_ln" ErrorMessage="Invalid last Name Format" Font-Size="Small" ForeColor="Red" ValidationExpression="([A-Z][a-z]* \ s[A-Z][a-z])|([A-Z][a-z]*)"></asp:RegularExpressionValidator>
                     </td>
                     <td class="auto-style2"></td>
                 </tr>
@@ -60,7 +66,10 @@
                         <asp:Label ID="Label4" runat="server" Font-Names="Berlin Sans FB" Text="Email"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="Txt_email" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="Txt_email" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="Txt_email" ErrorMessage="Invalid email" Font-Size="Small" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -69,7 +78,10 @@
                         <asp:Label ID="Label5" runat="server" Font-Names="Berlin Sans FB" Text="Username"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox10" runat="server"></asp:TextBox>
+                        <asp:TextBox ID="txt_username" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="txt_username" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="txt_username" ErrorMessage="user-name must be at least 8 characters" Font-Size="Small" ForeColor="Red" ValidationExpression="\w{8,}"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -78,7 +90,10 @@
                         <asp:Label ID="Label6" runat="server" Font-Names="Berlin Sans FB" Text="Password"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox11" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txt_password" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="txt_password" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:RegularExpressionValidator ID="RegularExpressionValidator5" runat="server" ControlToValidate="txt_password" ErrorMessage="password must be 8-12 characters" Font-Size="Small" ForeColor="Red" ValidationExpression="\w{8,12}"></asp:RegularExpressionValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -87,7 +102,10 @@
                         <asp:Label ID="Label7" runat="server" Font-Names="Berlin Sans FB" Text="Confirm-Password"></asp:Label>
                     </td>
                     <td>
-                        <asp:TextBox ID="TextBox12" runat="server" TextMode="Password"></asp:TextBox>
+                        <asp:TextBox ID="txt_cpass" runat="server" TextMode="Password" OnTextChanged="TextBox12_TextChanged"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="txt_cpass" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="txt_password" ControlToValidate="txt_cpass" ErrorMessage="not matching" Font-Size="Small" ForeColor="Red"></asp:CompareValidator>
                     </td>
                     <td>&nbsp;</td>
                 </tr>

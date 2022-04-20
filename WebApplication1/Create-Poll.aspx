@@ -32,6 +32,7 @@
                 </td>
                 <td>
                     <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TextBox1" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -41,6 +42,7 @@
                 </td>
                 <td>
                     <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox2" ErrorMessage="this is a required field" Font-Size="Small" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
             </tr>
